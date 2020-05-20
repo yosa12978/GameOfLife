@@ -21,7 +21,7 @@ namespace GameOfLive
             for(int i = 0; i < rows; i++)
             {
                 for(int j = 0; j < cols; j++)
-                    Console.Write(field[j, i] ? " #" : "  ");
+                    Console.Write(field[j, i] ? " ■" : "  ");
                 Console.Write("\n");    
             }   
             gen++;
@@ -87,6 +87,7 @@ namespace GameOfLive
         {
             Console.Clear();
             start();
+            Thread.Sleep(70);
             while(true)
             {
                 update();
